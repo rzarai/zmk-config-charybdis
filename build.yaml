@@ -1,9 +1,9 @@
----
-include:
+build:
   - board: nice_nano_v2
     shield: charybdis_left
+    cmake-args: "-DBOARD_ROOT=${GITHUB_WORKSPACE}/zmk/app"
   - board: nice_nano_v2
     shield: charybdis_right
-    cmake-args: "-DZMK_EXTRA_MODULES=${GITHUB_WORKSPACE}/zmk-pmw3610-driver"
-  - board: nice_nano_v2
-    shield: settings_reset
+    cmake-args: "-DZMK_EXTRA_MODULES=${GITHUB_WORKSPACE}/zmk-pmw3610-driver -DBOARD_ROOT=${GITHUB_WORKSPACE}/zmk/app"
+#  - board: nice_nano_v2
+#    shield: settings_reset
