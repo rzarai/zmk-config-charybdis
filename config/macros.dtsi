@@ -13,6 +13,17 @@
             >;
         };
 
+        q_rapid_fire: q_rapid_fire {
+            label = "Rapid Fire W";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp Q                // Press Q ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
         w_rapid_fire: w_rapid_fire {
             label = "Rapid Fire W";
             compatible = "zmk,behavior-macro";
@@ -46,6 +57,17 @@
             >;
         };
 
+        a_rapid_fire: a_rapid_fire {
+            label = "Rapid Fire A";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp A            // Press A ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
         s_rapid_fire: s_rapid_fire {
             label = "Rapid Fire S";
             compatible = "zmk,behavior-macro";
@@ -74,6 +96,28 @@
             #binding-cells = <0>;
             bindings = <
                 &kp F            // Press F ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        g_rapid_fire: g_rapid_fire {
+            label = "Rapid Fire G";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp G            // Press G ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        z_rapid_fire: z_rapid_fire {
+            label = "Rapid Fire Z";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp Z            // Press Z ability
                 &macro_wait_time 25  // 25 ms delay
                 &mkp LCLK            // Left mouse click
             >;
