@@ -92,8 +92,8 @@
             bindings = <
                 &kp N1                    &kp N2          &kp N3         &kp N4             &kp N5        &kp N6          &none  &none  &none  &none  &none  &none
                 &kp NON_US_BACKSLASH      &kp Q           &kp W          &kp E              &kp R         &kp T           &none  &none  &none  &none  &none  &none
-                &kp Y     &kp A           &kp S          &kp D              &kp F         &kp G           &none  &none  &none  &none  &none  &none
-                &kp ESC   &kp Z           &kp X          &kp C              &kp V         &kp B           &none  &none  &none  &none  &none  &none
+                &kp Y     &kp A           &kp S           &kp D          &kp F              &kp G                         &none  &none  &none  &none  &none  &none
+                &kp ESC   &kp Z           &kp X           &kp C          &kp V              &kp B                         &none  &none  &none  &none  &none  &none
                                           &alt_layer      &shift_layer   &lt 8 LS(TAB)      &ctrl_layer   &lt 7 TAB              &none  &none  &none
             >;
         };
