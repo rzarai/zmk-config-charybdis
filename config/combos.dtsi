@@ -119,6 +119,7 @@
             require-prior-idle-ms = <250>;
             key-positions = <4 5>;    // 4 + 5
             bindings = <&kp C_MUTE>;
+            layers = <1 2 3 4 5>;
         };
 
         combo_vol_up {
@@ -126,6 +127,7 @@
             require-prior-idle-ms = <250>;
             key-positions = <3 4>;    // 3 + 4
             bindings = <&kp C_VOL_UP>;
+            layers = <1 2 3 4 5>;
         };
 
         combo_vol_down {
@@ -133,6 +135,7 @@
             require-prior-idle-ms = <250>;
             key-positions = <2 3>;    // 2 + 3
             bindings = <&kp C_VOL_DN>;
+            layers = <1 2 3 4 5>;
         };
 
         combo_brightness_up {
@@ -140,6 +143,7 @@
             require-prior-idle-ms = <250>;
             key-positions = <1 2>;    // 1 + 2
             bindings = <&kp C_BRI_UP>;
+            layers = <1 2 3 4 5>;
         };
 
         combo_brightness_down {
@@ -147,12 +151,13 @@
             require-prior-idle-ms = <250>;
             key-positions = <0 1>;    // NON_US_BACKSLASH + 1
             bindings = <&kp C_BRI_DN>;
+            layers = <1 2 3 4 5>;
         };
 
         combo_sc2_toggle {
             timeout-ms = <25>;
             require-prior-idle-ms = <250>;
-            key-positions = <0 11>;      // 1st key (NON_US_BACKSLASH) + 12th key (NON_US_HASH)
+            key-positions = <0 12>;
             bindings = <&tog 6>;
             layers = <0 6>;
         };
@@ -160,7 +165,7 @@
         combo_sc2_tab_forward {
             timeout-ms = <25>;
             require-prior-idle-ms = <250>;
-            key-positions = <0 11>;      // 1st key (NON_US_BACKSLASH) + 12th key (NON_US_HASH)
+            key-positions = <0 12>;
             bindings = <&tog 6>;
             layers = <6 7 8>;
         };
@@ -168,9 +173,17 @@
         combo_sc2_tab_backward {
             timeout-ms = <25>;
             require-prior-idle-ms = <250>;
-            key-positions = <0 11>;      // 1st key (NON_US_BACKSLASH) + 12th key (NON_US_HASH)
+            key-positions = <0 12>;
             bindings = <&tog 6>;
             layers = <6 7 8>;
+        };
+
+        combo_game_toggle {
+            timeout-ms = <25>;
+            require-prior-idle-ms = <250>;
+            key-positions = <11 23>;
+            bindings = <&tog 5>;
+            layers = <0 5>;
         };
     };
 };
